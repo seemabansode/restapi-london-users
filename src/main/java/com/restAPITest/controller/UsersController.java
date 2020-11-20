@@ -3,7 +3,8 @@ package com.restAPITest.controller;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import service.LondonUserService;
+import com.restAPITest.service.LondonUserService;
+
 
 
 public class UsersController {
