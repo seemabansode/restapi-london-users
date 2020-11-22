@@ -16,7 +16,10 @@ public class UsersController {
 	@Autowired
 	private LondonUserService londonUserService;
 	
-	    //getAllUsers Method
+		/*
+		 * Get all the users from base API
+		 */
+
 		@GetMapping("/users")
 		public List<Object> getAllUsers() {
 			
@@ -24,6 +27,9 @@ public class UsersController {
 			
 		}
 		
+		/*
+		 * Get all the users whose Latitudes and Longitudes are within the 50 miles from London 
+		 */
 		
 		@GetMapping("/users-london")
 		public List<User> getLondonUsers() {
@@ -33,11 +39,5 @@ public class UsersController {
 		}
 		
 	
-	
-		@GetMapping("/helloworld1")
-		public String helloWorld()
-		{
-			return "Hello World with GetMapping";
-		}
 	
 }

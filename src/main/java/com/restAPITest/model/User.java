@@ -28,7 +28,9 @@ public class User {
 	
 	
 	
-	//Getters and Setters
+	/*
+     * Getters and Setters
+     */
 	
 	
 	public int getId() {

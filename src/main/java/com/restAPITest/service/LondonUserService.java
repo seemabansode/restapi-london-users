@@ -39,6 +39,9 @@ public class LondonUserService {
 		
 		List<User> usersWithinLondon = new ArrayList<>();
 		
+		/*
+         * Consume the base API using restTemplate
+         */
 		
 		ResponseEntity<User[]> allUsers =  restTemplate.getForEntity( url, User[].class);
 		
@@ -56,6 +59,11 @@ public class LondonUserService {
          * currently it is set to 50 miles as per requirement given  
          */
         int distanceToBeCalculated = 50;
+        
+        /*
+         * Fetching each User object to check the distance from the user location and London location 
+         */
+        
         
         for (int i = 0; i <user.length ; i++) { 
 		
@@ -104,6 +112,10 @@ public class LondonUserService {
 		
 		
         }
+        
+        /*
+         * return the usersWithinLondon List object
+         */
         
 		return usersWithinLondon;
 		
