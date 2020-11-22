@@ -35,7 +35,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>net.sf.geographiclib</groupId>
+			<artifactId>GeographicLib-Java</artifactId>
+			<version>1.50</version>
+		</dependency>
 	</dependencies>
+	
+	
 
 	<build>
 		<plugins>
