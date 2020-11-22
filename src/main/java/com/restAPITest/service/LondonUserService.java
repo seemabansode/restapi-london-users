@@ -22,7 +22,10 @@ public class LondonUserService {
 	@Autowired
 	private RestTemplate restTemplate;
 	
-	//Base url to get called
+	/*
+     * Base url to get called
+     */
+	
 	private String url = "https://bpdts-test-app.herokuapp.com/users";
 	
 		
