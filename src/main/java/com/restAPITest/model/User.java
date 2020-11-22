@@ -5,6 +5,10 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class User {
 	
+	/*
+     * Define Json properties 
+     */
+	
 	@JsonProperty("id")
 	private int id;
 	
@@ -29,7 +33,7 @@ public class User {
 	
 	
 	/*
-     * Getters and Setters
+     * Getters and Setters 
      */
 	
 	

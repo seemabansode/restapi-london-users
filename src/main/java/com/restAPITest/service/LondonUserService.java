@@ -117,7 +117,7 @@ public class LondonUserService {
          * return the usersWithinLondon List object
          */
         
-		return usersWithinLondon;
+        		return usersWithinLondon;
 		
 	}
 	
